@@ -1,9 +1,9 @@
-import React from "react";
+import React, { Component } from "react";
 import { render } from "react-dom";
 
 import { ExersizeForm } from "./ExersizeForm";
 
-export class Program extends React.Component {
+export default class Program extends React.Component {
 	render() {
 	let program = {
 		name: "Тестовая программа",
@@ -34,33 +34,6 @@ export class Program extends React.Component {
 	}
 }
 
-1) тренировка
-
-название - грудь бицепс
-
-упражнение 
-
-жим 
-
-подход1
-
-повторения 10
-
-вес 20кг
-
-подход2 
-
-повторения 10
-
-вес 20кг
-
-подъем штанги
-
-нужен компонент выполнение упражнения
-
-жим
-
-выполнение упражнения
 
 
 
