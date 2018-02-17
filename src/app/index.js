@@ -1,6 +1,7 @@
 import React from "react";
 
 import { render } from "react-dom";
+
 import { createStore, combineReducers, applyMiddleware } from "redux";
 
 import { Provider } from 'react-redux';
@@ -49,3 +50,4 @@ render(
 	<Provider store={ store }>
 		<App/>
 	</Provider>, window.document.getElementById("app"));
+
