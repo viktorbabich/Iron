@@ -1,6 +1,6 @@
 import React from "react";
-import { Header } from "./Header";
-import { Home } from "./Home";
+import { Header } from "../components/Header";
+import { Home } from "../components/Home";
 import { connect } from "react-redux";
 
 class App extends React.Component {
@@ -9,7 +9,7 @@ class App extends React.Component {
 		return (
 			<div>
 				<Header/>
-				<Home arr={ arr } name={ this.props.user.name } setName={() => this.props.setName() }/>	
+				<Home arr={ arr } name={ this.props.user.name } govno={this.props.setName.bind(this)}/>	
 			</div>
 		);
 	}
